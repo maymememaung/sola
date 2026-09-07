@@ -39,28 +39,59 @@
       <section aria-labelledby="gallery-heading">
         <h2 id="gallery-heading" class="sr-only">Gallery</h2>
 
-        <!-- To add a new photo: copy any <li> below, update src and alt. That's it. -->
+        <!-- To add a new photo: copy any <li>, update href/src/alt. That's it.
+             Without JS: clicking the link opens the image file directly (graceful degradation).
+             With JS:    click is intercepted and the image opens in the lightbox modal. -->
         <ul role="list" class="gallery">
           <li class="gallery__item">
-            <img src="images/photo-1.jpg" alt="Sunlit corner desk with a ceramic mug and open notebook" />
+            <a href="images/photo-1.jpg" class="photo-link">
+              <img src="images/photo-1.jpg" alt="Sunlit corner desk with a ceramic mug and open notebook" />
+            </a>
           </li>
           <li class="gallery__item">
-            <img src="images/photo-2.jpg" alt="Row of wooden workstations beneath warm pendant lights" />
+            <a href="images/photo-2.jpg" class="photo-link">
+              <img src="images/photo-2.jpg" alt="Row of wooden workstations beneath warm pendant lights" />
+            </a>
           </li>
           <li class="gallery__item">
-            <img src="images/photo-3.jpg" alt="Close-up of a freshly poured oat milk latte" />
+            <a href="images/photo-3.jpg" class="photo-link">
+              <img src="images/photo-3.jpg" alt="Close-up of a freshly poured oat milk latte" />
+            </a>
           </li>
           <li class="gallery__item">
-            <img src="images/photo-4.jpg" alt="Floor-to-ceiling windows overlooking the street" />
+            <a href="images/photo-4.jpg" class="photo-link">
+              <img src="images/photo-4.jpg" alt="Floor-to-ceiling windows overlooking the street" />
+            </a>
           </li>
           <li class="gallery__item">
-            <img src="images/photo-5.jpg" alt="Shelves lined with plants and ambient lighting" />
+            <a href="images/photo-5.jpg" class="photo-link">
+              <img src="images/photo-5.jpg" alt="Shelves lined with plants and ambient lighting" />
+            </a>
           </li>
           <li class="gallery__item">
-            <img src="images/photo-6.jpg" alt="Quiet reading nook with a cushioned bench seat" />
+            <a href="images/photo-6.jpg" class="photo-link">
+              <img src="images/photo-6.jpg" alt="Quiet reading nook with a cushioned bench seat" />
+            </a>
           </li>
         </ul>
       </section>
+
+      <!-- Lightbox modal — hidden until a photo link is clicked -->
+      <div
+        id="photo-modal"
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-caption"
+        hidden
+      >
+        <div class="modal__backdrop"></div>
+        <div class="modal__content">
+          <button class="modal__close" aria-label="Close photo">&#10005;</button>
+          <img id="modal-image" src="" alt="" />
+          <p id="modal-caption"></p>
+        </div>
+      </div>
     </main>
 
     <footer class="site-footer">
@@ -68,5 +99,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

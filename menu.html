@@ -34,6 +34,19 @@
       <h1>Menu</h1>
       <p class="menu-intro">All items are available during opening hours. Prices include tax.</p>
 
+      <!-- Without JS this is just hidden (display:none via CSS) and the full menu shows.
+           JS removes the hidden attribute so the input appears. -->
+      <div class="menu-search" role="search" hidden>
+        <label for="menu-search-input">Search menu</label>
+        <input
+          type="search"
+          id="menu-search-input"
+          placeholder="e.g. latte, toast…"
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </div>
+
       <div class="menu-card">
 
         <section class="menu-category" aria-labelledby="coffee-heading">
@@ -115,6 +128,8 @@
         </section>
 
       </div>
+
+      <p class="menu-empty" hidden>No items match your search.</p>
     </main>
 
     <footer class="site-footer">
@@ -122,5 +137,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
   </body>
 </html>
