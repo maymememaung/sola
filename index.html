@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sola — a neighborhood café built for focused work."
+    />
+    <title>Sola Café</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- TODO: extract this <header> + <nav> into a shared pattern you paste on every page -->
+    <header class="site-header">
+      <a href="index.html" class="logo">Sola</a>
+      <nav aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- TODO: add hamburger button + JS toggle for mobile nav -->
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div id="hero_left">
+          <h1 id="hero-heading">Quiet minds build great things.</h1>
+          <p>
+            Sola is a dedicated silent cafe designed exclusively for deep focus,
+            academic pursuit, and clean thinking. Enjoy curated herbal tea,
+            high-speed fiber internet, and ergonomic seating.
+          </p>
+          <a href="photos.html" class="button">Explore the space</a>
+        </div>
+        <div id="hero_right">
+          <img src="images/hero.png" alt="Sola Café interior" />
+        </div>
+      </section>
+
+      <!-- Brief intro / selling points -->
+      <section class="features" aria-labelledby="features-heading">
+        <h4>Designed for flow state</h4>
+        <h2 id="features-heading">
+          Every detail curated to elevate your cognitive endurance.
+        </h2>
+        <div id="features_container">
+          <div class="feature_card">
+            <span>01</span>
+            <h3>Silent Zones</h3>
+            <p>
+              Architecturally sound acoustic paneling ensures absolute peace.
+              Your train of thought remains entirely uninterrupted.
+            </p>
+          </div>
+          <div class="feature_card">
+            <span>02</span>
+            <h3>Sustained Focus</h3>
+            <p>
+              Gb-speed dedicated fiber connection, individual power outlets at
+              every warm oak workstation, and ergonomic task lighting.
+            </p>
+          </div>
+          <div class="feature_card">
+            <span>03</span>
+            <h3>Clean Nourishment</h3>
+            <p>
+              Slow-poured drip coffee, artisanal matcha, and subtle
+              nutrient-dense botanicals designed to keep you alert and calm.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature images -->
+      <section class="feature-images" aria-labelledby="feature-images-heading">
+        <h2 id="feature-images-heading">A space for your mind to thrive</h2>
+        <div id="feature_images_container">
+          <img src="images/feature-1.png" alt="Sola Café interior" />
+          <img src="images/feature-2.png" alt="Sola Café interior" />
+          <img src="images/feature-3.png" alt="Sola Café interior" />
+        </div>
+      </section>
+
+      <!-- Information section -->
+      <section
+        id="information-section"
+        aria-labelledby="information-section-heading"
+      >
+        <div id="info-left">
+          <h2 id="information-section-heading">
+            Quiet hours, warm lights, and focused minds.
+          </h2>
+          <a href="menu.html" class="button">Explore our menu</a>
+        </div>
+        <div id="info-right-hours">
+          <h4 id="information-section-heading">Hours of Solitude</h4>
+          <div>Mon – Fri : 07:00 – 22:00</div>
+          <div>Sat – Sun : 08:00 – 20:00</div>
+        </div>
+        <div id="info-right-location">
+          <h4 id="information-section-heading">Sanctuary Location</h4>
+          <address>
+            120 Serenity Place, Suite B<br />East Village, NY 10003
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Sola Café. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

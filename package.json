@@ -1,0 +1,14 @@
+{
+  "name": "sola-cafe",
+  "version": "1.0.0",
+  "description": "Sola — a neighbourhood café website",
+  "scripts": {
+    "test": "vitest run",
+    "test:a11y": "playwright test tests/a11y/"
+  },
+  "devDependencies": {
+    "vitest": "^1.0.0",
+    "@playwright/test": "^1.40.0",
+    "axe-playwright": "^1.2.3"
+  }
+}

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sola Café menu — coffee, tea, food, and more."
+    />
+    <title>Menu — Sola Café</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="logo">Sola</a>
+      <nav aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" aria-current="page">Menu</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="menu-page">
+      <h1>Menu</h1>
+      <p class="menu-intro">All items are available during opening hours. Prices include tax.</p>
+
+      <div class="menu-card">
+
+        <section class="menu-category" aria-labelledby="coffee-heading">
+          <h2 id="coffee-heading" class="menu-category__title">Coffee</h2>
+          <ul role="list" class="menu-category__list">
+            <li class="menu-row">
+              <span class="menu-row__name">Drip Coffee</span>
+              <span class="menu-row__price">$4.00</span>
+            </li>
+            <li class="menu-row">
+              <span class="menu-row__name">Espresso</span>
+              <span class="menu-row__price">$3.50</span>
+            </li>
+            <li class="menu-row">
+              <span class="menu-row__name">Oat Milk Latte</span>
+              <span class="menu-row__price">$6.00</span>
+            </li>
+            <li class="menu-row">
+              <span class="menu-row__name">Cortado</span>
+              <span class="menu-row__price">$5.00</span>
+            </li>
+            <li class="menu-row">
+              <span class="menu-row__name">Cold Brew</span>
+              <span class="menu-row__price">$5.50</span>
+            </li>
+          </ul>
+        </section>
+
+        <hr class="menu-divider" />
+
+        <section class="menu-category" aria-labelledby="tea-heading">
+          <h2 id="tea-heading" class="menu-category__title">Tea &amp; Matcha</h2>
+          <ul role="list" class="menu-category__list">
+            <li class="menu-row">
+              <span class="menu-row__name">Ceremonial Matcha</span>
+              <span class="menu-row__price">$6.00</span>
+            </li>
+            <li class="menu-row">
+              <span class="menu-row__name">Chamomile</span>
+              <span class="menu-row__price">$4.00</span>
+            </li>
+            <li class="menu-row">
+              <span class="menu-row__name">Earl Grey</span>
+              <span class="menu-row__price">$4.00</span>
+            </li>
+            <li class="menu-row">
+              <span class="menu-row__name">Peppermint</span>
+              <span class="menu-row__price">$4.00</span>
+            </li>
+          </ul>
+        </section>
+
+        <hr class="menu-divider" />
+
+        <section class="menu-category" aria-labelledby="food-heading">
+          <h2 id="food-heading" class="menu-category__title">Food</h2>
+          <ul role="list" class="menu-category__list">
+            <li class="menu-row">
+              <span class="menu-row__name">Avocado Toast</span>
+              <span class="menu-row__price">$10.00</span>
+            </li>
+            <li class="menu-row">
+              <span class="menu-row__name">Granola Bowl</span>
+              <span class="menu-row__price">$9.00</span>
+            </li>
+            <li class="menu-row">
+              <span class="menu-row__name">Almond Croissant</span>
+              <span class="menu-row__price">$5.00</span>
+            </li>
+            <li class="menu-row">
+              <span class="menu-row__name">Banana Bread</span>
+              <span class="menu-row__price">$4.50</span>
+            </li>
+            <li class="menu-row">
+              <span class="menu-row__name">Seasonal Fruit Cup</span>
+              <span class="menu-row__price">$6.00</span>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Sola Café. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

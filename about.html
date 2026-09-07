@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About Sola Café — our story and values."
+    />
+    <title>About — Sola Café</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="logo">Sola</a>
+      <nav aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="about-page">
+      <!-- Story section: text + image side by side -->
+      <section class="about-story" aria-labelledby="story-heading">
+        <div class="about-story__text">
+          <h1 id="story-heading">Our story</h1>
+          <p>
+            Sola started with a simple observation: most cafés are too loud to
+            actually think in. Conversations spill over, music competes with
+            your headphones, and the table nearest the espresso machine shakes
+            every few minutes. We wanted something different.
+          </p>
+          <p>
+            We opened Sola as a dedicated space for people who need to get
+            serious work done — students pulling long study sessions,
+            freelancers who've outgrown their home office, and remote
+            professionals who crave a change of scenery without the noise that
+            usually comes with it. Every design decision, from the acoustic
+            paneling on the walls to the warm-toned task lighting above each
+            desk, was made with focus in mind.
+          </p>
+          <p>
+            The coffee and food came second, but we took them just as seriously.
+            We source single-origin beans from small roasters, brew matcha from
+            ceremonial-grade leaves, and keep the food menu short so that
+            everything on it is genuinely good.
+          </p>
+        </div>
+        <div class="about-story__image">
+          <img
+            src="images/about.jpg"
+            alt="One of the baristas of Sola Café pouring coffee into a ceramic mug"
+          />
+        </div>
+      </section>
+
+      <!-- Values -->
+      <section class="about-values" aria-labelledby="values-heading">
+        <h2 id="values-heading">What we stand for</h2>
+        <ul role="list" class="about-values__list">
+          <li class="about-value">
+            <h3>Quiet by design</h3>
+            <p>
+              Sola is a silent café. No phone calls, no video meetings without
+              headphones, no loud conversations. It is a rule we enforce gently
+              because our regulars depend on it.
+            </p>
+          </li>
+          <li class="about-value">
+            <h3>Unhurried time</h3>
+            <p>
+              There are no time limits on seats. Order when you're ready, stay
+              as long as you need. We believe good work takes as long as it
+              takes.
+            </p>
+          </li>
+          <li class="about-value">
+            <h3>Quality over quantity</h3>
+            <p>
+              A short menu done well beats a long menu done indifferently. The
+              same goes for our space: we keep fewer seats so each one is
+              actually comfortable.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Sola Café. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

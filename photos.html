@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Photos of Sola Café's study space, seating, and atmosphere."
+    />
+    <title>Photos — Sola Café</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="logo">Sola</a>
+      <nav aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="photos.html" aria-current="page">Photos</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="photos-page">
+      <header class="photos-header">
+        <h1>The Space</h1>
+        <p>A look inside Sola — the light, the desks, the quiet.</p>
+      </header>
+
+      <section aria-labelledby="gallery-heading">
+        <h2 id="gallery-heading" class="sr-only">Gallery</h2>
+
+        <!-- To add a new photo: copy any <li> below, update src and alt. That's it. -->
+        <ul role="list" class="gallery">
+          <li class="gallery__item">
+            <img src="images/photo-1.jpg" alt="Sunlit corner desk with a ceramic mug and open notebook" />
+          </li>
+          <li class="gallery__item">
+            <img src="images/photo-2.jpg" alt="Row of wooden workstations beneath warm pendant lights" />
+          </li>
+          <li class="gallery__item">
+            <img src="images/photo-3.jpg" alt="Close-up of a freshly poured oat milk latte" />
+          </li>
+          <li class="gallery__item">
+            <img src="images/photo-4.jpg" alt="Floor-to-ceiling windows overlooking the street" />
+          </li>
+          <li class="gallery__item">
+            <img src="images/photo-5.jpg" alt="Shelves lined with plants and ambient lighting" />
+          </li>
+          <li class="gallery__item">
+            <img src="images/photo-6.jpg" alt="Quiet reading nook with a cushioned bench seat" />
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Sola Café. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

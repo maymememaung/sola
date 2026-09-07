@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Sola Café — location, hours, and enquiries."
+    />
+    <title>Contact — Sola Café</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="logo">Sola</a>
+      <nav aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Find us</h1>
+
+      <div class="contact-layout">
+        <!-- Info column -->
+        <section aria-labelledby="info-heading">
+          <h2 id="info-heading">Info</h2>
+
+          <address>
+            120 Serenity Place, Suite B<br />East Village, NY 10003
+          </address>
+
+          <section aria-labelledby="hours-heading">
+            <h3 id="hours-heading">Hours</h3>
+            <div>Mon – Fri : 07:00 – 22:00</div>
+            <div>Sat – Sun : 08:00 – 20:00</div>
+          </section>
+        </section>
+
+        <!-- Contact form -->
+        <section aria-labelledby="form-heading">
+          <h2 id="form-heading">Send a message</h2>
+          <!-- Note: this form won't submit anywhere without a backend or service like Formspree.
+             For now it demonstrates accessible form markup. -->
+          <form class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+                aria-describedby="name-error"
+              />
+              <span class="form-group__error-msg" id="name-error" role="alert"
+                >Please enter your name.</span
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+                aria-describedby="email-error"
+              />
+              <span class="form-group__error-msg" id="email-error" role="alert"
+                >Please enter a valid email address.</span
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                aria-describedby="message-error"
+              ></textarea>
+              <span
+                class="form-group__error-msg"
+                id="message-error"
+                role="alert"
+                >Please enter a message (at least 10 characters).</span
+              >
+            </div>
+
+            <button type="submit" class="btn btn--primary">Send</button>
+          </form>
+
+          <div class="form-success" role="status" aria-live="polite">
+            Thanks for reaching out! We'll get back to you soon.
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Sola Café. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact-form.js"></script>
+  </body>
+</html>
