@@ -4,7 +4,7 @@
   "description": "Sola — a neighbourhood café website",
   "scripts": {
     "test": "vitest run",
-    "test:a11y": "playwright test tests/a11y/"
+    "test:a11y": "playwright test"
   },
   "devDependencies": {
     "vitest": "^1.0.0",

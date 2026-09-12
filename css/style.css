@@ -110,7 +110,13 @@ body {
   background: var(--color-bg);
   line-height: 1.6;
   min-width: 375px;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
+
+main { flex: 1;}
 
 img { display: block; max-width: 100%; height: auto; }
 
@@ -138,9 +144,9 @@ a:focus-visible {
    3. TYPOGRAPHY SCALE
    Headings use the full scale; body uses --text-base and --text-sm.
    ============================================================ */
-h1 { font-size: var(--text-3xl); font-weight: 800; line-height: 1.15; }
-h2 { font-size: var(--text-2xl); font-weight: 800; line-height: 1.2;  }
-h3 { font-size: var(--text-xl);  font-weight: 700; line-height: 1.3;  }
+h1 { font-size: var(--text-3xl); font-weight: 800; line-height: 1.15; margin: var(--space-8) 0; }
+h2 { font-size: var(--text-2xl); font-weight: 800; line-height: 1.2; margin: var(--space-6) 0; }
+h3 { font-size: var(--text-xl);  font-weight: 700; line-height: 1.3; margin: var(--space-4) 0; }
 h4 { font-size: var(--text-lg);  font-weight: 700; line-height: 1.4;  }
 
 h1, h2, h3, h4 { font-family: var(--font-sans); }
@@ -148,6 +154,14 @@ h1, h2, h3, h4 { font-family: var(--font-sans); }
 p { line-height: 1.7; }
 
 small { font-size: var(--text-sm); }
+
+.section-eyebrow {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
 
 
 /* ============================================================
@@ -309,7 +323,7 @@ address {
   background: var(--color-surface);
   color: var(--color-text-muted);
   font-size: var(--text-sm);
-  margin-top: var(--space-16);
+  margin-top: var(--space-8);
 }
 
 
@@ -328,6 +342,11 @@ address {
 
 #hero_left {
   flex: 1;
+  padding: var(--space-8) var(--space-12);
+
+  p {
+    margin: var(--space-4) 0;
+  }
 }
 
 #hero_right {
@@ -338,11 +357,15 @@ address {
   }
 }
 
-.features { min-height: 30vh; }
+.features { 
+  min-height: 30vh; 
+  padding: var(--space-8) var(--space-12);
+}
 
 #features_container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .feature_card {
@@ -357,7 +380,7 @@ address {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-4);
-  margin-top: var(--space-6);
+  margin-top: var(--space-12);
 }
 
 #feature_images_container img {
@@ -367,12 +390,21 @@ address {
   border-radius: var(--radius-md);
 }
 
-.feature-images { background: var(--color-surface); }
+.feature-images { 
+  background: var(--color-surface);
+  padding: var(--space-8) var(--space-12);
+}
 
-.information-section {
+#information-section {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding: var(--space-8) var(--space-12);
+  align-items: center;
+}
+
+#info-right-hours, #info-right-location {
+  margin-top: var(--space-4);
 }
 
 
@@ -659,6 +691,10 @@ address {
   margin: 0 auto;
 }
 
+#contact-main {
+  padding: 0 var(--space-8);
+}
+
 
 /* ============================================================
   12. RESPONSIVE OVERRIDES
@@ -710,6 +746,10 @@ address {
   h1 { font-size: var(--text-2xl); }
   h2 { font-size: var(--text-xl);  }
 
+  .features, .feature-images, #information-section {
+    text-align: center;
+  }
+
   #features_container {
     flex-direction: column;
   }
@@ -718,7 +758,7 @@ address {
     grid-template-columns: 1fr;
   }
 
-  .information-section {
+  #information-section {
     flex-direction: column;
   }
 }
